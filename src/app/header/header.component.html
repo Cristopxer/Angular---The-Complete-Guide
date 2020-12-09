@@ -19,7 +19,7 @@
       <li class="nav-item">
         <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a>
       </li>      
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" (click)='openToggle()'>
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -31,7 +31,7 @@
           >
             Manage
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" #dropdownList>
             <a class="dropdown-item" href="#">Save Data</a>
             <a class="dropdown-item" href="#">Fetch Data</a>
           </div>
