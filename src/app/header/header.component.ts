@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, Renderer2, ViewChild,ElementRef } from '@angular/core';
+import { Component, Renderer2, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,15 +7,7 @@ import { Component, EventEmitter, Output, Renderer2, ViewChild,ElementRef } from
 export class HeaderComponent {
   @ViewChild('dropdownList') list: ElementRef;
   isOpen = false;
-
-  @Output() featureSelected = new EventEmitter<string>();
-
-    constructor(private renderer: Renderer2){}
-
-  onSelect(feature: string) {
-    this.featureSelected.emit(feature);
-  }
-
+  constructor(private renderer: Renderer2) {}
   openToggle() {
     this.isOpen = !this.isOpen;
     this.isOpen
