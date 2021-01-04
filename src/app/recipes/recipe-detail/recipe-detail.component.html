@@ -27,11 +27,7 @@
       >
         Manage Recipe <span class="caret"></span>
       </button>
-      <ul
-        class="dropdown-menu"
-        role="menu"
-        #dropdownList        
-      >
+      <ul class="dropdown-menu" role="menu" #dropdownList>
         <li>
           <a
             class="dropdown-item"
@@ -41,7 +37,7 @@
           >
         </li>
         <li>
-          <a style="cursor: pointer" class="dropdown-item">Edit Recipe</a>
+          <a style="cursor: pointer" class="dropdown-item" (click)="onEditRecipe()">Edit Recipe</a>
         </li>
         <li>
           <a style="cursor: pointer" class="dropdown-item">Delete Recipe</a>
