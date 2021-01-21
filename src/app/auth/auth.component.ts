@@ -44,4 +44,7 @@ export class AuthComponent {
     );
     form.resetForm();
   }
+  onHandleError(){
+    this.error = null;
+  }
 }
